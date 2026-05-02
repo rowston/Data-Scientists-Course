@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iResearch Inc.</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f6f2;
+        --text: #1f2a24;
+        --muted: #4b5a52;
+        --accent: #2f5d50;
+        --card: #ffffff;
+        --border: #d7ded7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      header {
+        background: var(--card);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 1.5rem 1.5rem 2rem;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .site-title {
+        font-size: 1.5rem;
+        font-weight: 650;
+        letter-spacing: 0.01em;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+      }
+
+      main {
+        padding: 2rem 0 1rem;
+      }
+
+      .purpose {
+        font-size: 1.1rem;
+        color: var(--muted);
+        max-width: 60ch;
+      }
+
+      .section-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.25rem;
+        margin-top: 1.5rem;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.25rem;
+        box-shadow: 0 2px 8px rgba(31, 42, 36, 0.05);
+      }
+
+      .card h3 {
+        margin-top: 0;
+        font-size: 1.05rem;
+      }
+
+      .contact {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        padding: 1.5rem 0 2rem;
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 600px) {
+        .nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        nav ul {
+          flex-wrap: wrap;
+        }
+
+        .container {
+          padding: 1.25rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="site-title">iResearch Inc.</div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="purpose">
+        <h1 class="section-title">Purpose</h1>
+        <p class="purpose">
+          iResearch Inc. advances educational research by partnering with schools and universities to
+          design evidence-based studies, translate findings into practice, and support equitable learning
+          outcomes.
+        </p>
+      </section>
+
+      <section id="highlights">
+        <h2 class="section-title">Highlights</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Research Portfolio</h3>
+            <p>
+              Explore longitudinal studies, program evaluations, and mixed-methods inquiries that inform
+              curriculum design and learning policy.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Partnerships</h3>
+            <p>
+              Collaborate with districts and higher education teams to co-create interventions, assess
+              impact, and share transparent findings.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Consulting</h3>
+            <p>
+              Receive guidance on research design, data ethics, and stakeholder engagement to ensure
+              studies are rigorous and actionable.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 class="section-title" id="contact-title">Contact</h2>
+        <p>
+          Reach the iResearch Inc. team at
+          <a href="mailto:contact@iresearchinc.com">contact@iresearchinc.com</a> to discuss collaboration
+          or project inquiries.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© 2025 iResearch Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
